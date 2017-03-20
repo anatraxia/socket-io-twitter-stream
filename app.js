@@ -9,15 +9,6 @@ app.set('view engine', 'ejs');
 
 app.use(morgan('dev'));
 
-// app.use(function(req, res, next) {
-//   console.log('%s request to %s from %s', req.method, req.path, req.ip);
-//   next();
-// });
-
-// app.get('/', function(req, res) {
-//     res.render('index');
-// });
-
 router.get('/', function(req, res) {
   res.render('index', { header: 'Twitter Search'});
 });
